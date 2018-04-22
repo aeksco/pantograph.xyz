@@ -1,2 +1,2 @@
 # pantograph.xyz
-Pantograph in Vue.js
+Pantograph.xyz in VueJS
