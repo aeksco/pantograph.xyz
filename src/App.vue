@@ -1,28 +1,19 @@
 
 <template>
   <div id="app">
-    <AppNavbar/>
+    <Navbar/>
     <router-view/>
-    <!-- <Notification/> -->
   </div>
 </template>
 
 <script>
-import AppNavbar from './containers/app_navbar'
-import AppFooter from './containers/app_footer'
-// import Notification from './containers/app_notification'
+import Navbar from '@/components/Navbar'
 
 export default {
   name: 'app',
-
-  // Top-Level Application Components
   components: {
-    AppNavbar,
-    // Notification,
-    AppFooter
+    Navbar
   },
-
-  // Top-Level page Meta
   metaInfo: {
     title: 'Loading...',
     titleTemplate: 'pantograph.xyz - %s',
@@ -44,9 +35,8 @@ export default {
     height: 100%
 
   // TODO - remove this.
-  .container-fluid
-    height: 100%
-    padding-top: 3.5rem
+  // .container-fluid
+    // height: 100%
 
   #app
     height: 100%

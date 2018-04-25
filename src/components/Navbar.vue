@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="dark" fixed="top">
+  <b-navbar toggleable="md" type="dark" variant="dark">
     <b-navbar-brand href="#/">
       <img class='logo mr-3' src="/static/icon_white.svg">
       <strong>pantograph</strong>.xyz

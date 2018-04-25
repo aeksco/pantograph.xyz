@@ -2,25 +2,12 @@
 <template>
   <div class="container-fluid">
     <div class="row h-100 align-items-center">
-      <div class="col-lg-12">
-        <div class="row my-4">
-          <div class="col-lg-12 text-center"><img src="/static/icon_white.svg" class="welcome-logo"/></div>
-        </div>
-        <div class="row my-4">
-          <div class="col-lg-12 text-center">
-            <p class="welcome-text">WELCOME</p>
-          </div>
-        </div>
-        <div class="row my-4">
-          <div class="col-lg-12 text-center">
-            <p class="lead"><a href="https://github.com/aeksco/pantograph.xyz" target="_blank">Pantograph.xyz</a> is an open-source platform for extruding STLs from simple 2D images.</p>
-          </div>
-        </div>
-        <div class="row py-2">
-          <div class="col-lg-12 text-center">
-            <p class="lead">Drag and drop an image file to get started - pantograph.xyz does the rest.</p>
-          </div>
-        </div>
+      <div class="col-lg-3 h-100">
+        <Controls />
+      </div>
+      <div class="col-lg-9 ">
+        <Renderer />
+        <Uploader />
       </div>
     </div>
   </div>
@@ -29,10 +16,18 @@
 <!-- // // // //  -->
 
 <script>
+import Controls from './components/Controls'
+import Renderer from './components/Renderer'
+import Uploader from './components/Uploader'
 export default {
   name: 'main_home',
   metaInfo: {
     title: 'Main - Home'
+  },
+  components: {
+    Controls,
+    Renderer,
+    Uploader
   }
 }
 </script>
